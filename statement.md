@@ -1,19 +1,20 @@
-# Welcome!
 
-This C++ template lets you get started quickly with a simple one-page playground.
-
-```C++ runnable
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() 
 {
-    cout << "Hello, World!";
+    int H;
+    cin>>H;cin.ignore();
+    int W;
+    cin>>W;cin.ignore();
+    for(int i=0;i<H;i++){
+        for(int j=i;j<W;j++){
+            cout<<"#";
+        }
+        cout<<endl;
+    }
     return 0;
 }
-```
-
-# Advanced usage
-
-If you want a more complex example (external libraries, viewers...), use the [Advanced C++ template](https://tech.io/select-repo/598)
